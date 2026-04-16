@@ -12,6 +12,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Root route - friendly message
+app.get('/', (req, res) => {
+  res.send('<h1>🚀 ChatSphere API is Live</h1><p>The backend is running perfectly. Use the <a href="https://chat-application-peach-omega.vercel.app">Frontend App</a> to start chatting!</p>');
+});
+
 // Routes
 app.use('/api/rooms', roomRoutes);
 app.use('/api/auth', authRoutes);
