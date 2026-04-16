@@ -4,7 +4,6 @@ import { useChatContext } from '../context/ChatContext'
 import { useSocket } from '../hooks/useSocket'
 import MessageFeed from '../components/MessageFeed'
 import MessageInput from '../components/MessageInput'
-import OnlineUsersList from '../components/OnlineUsersList'
 import TypingIndicator from '../components/TypingIndicator'
 import './ChatRoomPage.css'
 
