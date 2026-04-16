@@ -1,0 +1,38 @@
+.typing-indicator-placeholder {
+  height: 24px;
+  margin: 0 24px;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 24px;
+  margin: 0 24px 8px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--bg-hover);
+  align-self: flex-start;
+  color: var(--text-secondary);
+  font-size: 11px;
+  animation: slideIn 0.2s ease;
+}
+
+.typing-text { font-style: italic; }
+
+.typing-dots {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding-right: 4px;
+}
+.typing-dots span {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  animation: dotPulse 1.4s infinite ease-in-out both;
+}
+.typing-dots span:nth-child(1) { animation-delay: -0.32s; }
+.typing-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+.typing-ellipsis { display: none; } /* Using CSS animation instead of literal ellipsis */

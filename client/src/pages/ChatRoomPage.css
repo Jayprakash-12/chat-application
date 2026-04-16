@@ -1,0 +1,60 @@
+/* The pane that fits into the DashboardLayout right side */
+.chatroom-pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+/* Header */
+.chatroom-pane-header {
+  height: 64px;
+  padding: 0 16px;
+  background: var(--bg-hover);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.chatroom-room-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chatroom-room-hash {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.chatroom-room-name {
+  font-weight: 600;
+  font-size: var(--text-base);
+  color: var(--text-primary);
+}
+
+.chatroom-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+/* Main Area */
+.chatroom-pane-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Important for flex child scrolling */
+  position: relative;
+}

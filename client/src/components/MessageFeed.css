@@ -1,0 +1,136 @@
+.message-feed {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feed-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+.feed-empty-icon { font-size: 2.5rem; }
+
+.system-message {
+  text-align: center;
+  margin: 12px 0;
+}
+.system-message span {
+  display: inline-block;
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  font-size: var(--text-xs);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  animation: fadeUp 0.3s ease backwards;
+}
+.message-own { justify-content: flex-end; }
+.message-other { justify-content: flex-start; }
+
+.avatar {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+}
+.message-own .message-content { align-items: flex-end; }
+.message-other .message-content { align-items: flex-start; }
+
+.message-username {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  padding: 0 4px;
+}
+
+.message-bubble {
+  padding: 10px 14px;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  word-break: break-word;
+  white-space: pre-wrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.bubble-other {
+  background: var(--bubble-other);
+  color: var(--text-primary);
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 0px;
+}
+
+.bubble-own {
+  background: var(--bubble-own);
+  color: var(--text-primary);
+  border-radius: var(--radius-lg) var(--radius-lg) 0px var(--radius-lg);
+  border: none;
+}
+
+.message-time {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  padding: 0 4px;
+}
+
+/* Selection Elements */
+.message-row.message-own {
+  transition: background 0.2s;
+  padding: 4px 8px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.message-row.message-selected {
+  background: rgba(0, 168, 132, 0.15);
+}
+
+.message-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.checkbox-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+
+.checkbox-circle.checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Header style for selection mode */
+.selection-header {
+  background: var(--bg-tertiary);
+}
