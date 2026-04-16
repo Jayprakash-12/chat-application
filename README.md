@@ -2,6 +2,11 @@
 
 A modern, real-time chat application built with React, Node.js, Express, and Socket.io. ChatSphere offers a premium dark-mode experience with features like instant messaging, room management, and secure authentication.
 
+## 🌐 Live Demo
+
+- **Frontend**: [https://chat-application-peach-omega.vercel.app](https://chat-application-peach-omega.vercel.app)
+- **Backend API**: [https://chat-application-jrui.onrender.com](https://chat-application-jrui.onrender.com)
+
 ## ✨ Features
 
 - **Real-time Messaging**: Instant message delivery using Socket.io.
